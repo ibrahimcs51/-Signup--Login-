@@ -9,6 +9,8 @@ function getuser() {
     return user;
 }
 
+
+
 function register() {
     const username = document.getElementById("username");
     const email = document.getElementById("email");
@@ -63,8 +65,11 @@ function login() {
     if (matchedUser) {
         alert("Login successful!");
         console.log("Logged in:", matchedUser.username);
-         location= "indexx.html";
+
+         location= "indexx.html"; // Redirect to home page after login
     } else {
         alert("Invalid email or password.");
     }
+    email.value = password.value = "";
+
 }
