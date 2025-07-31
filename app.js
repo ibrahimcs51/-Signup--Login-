@@ -44,6 +44,8 @@ function register() {
     password.value = "";
 
     alert("Registration successful!");
+
+    location= "login.html"; // Redirect to login page after registration
 }
 
 function login() {
@@ -61,6 +63,7 @@ function login() {
     if (matchedUser) {
         alert("Login successful!");
         console.log("Logged in:", matchedUser.username);
+         location= "indexx.html";
     } else {
         alert("Invalid email or password.");
     }
