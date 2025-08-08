@@ -25,7 +25,7 @@ function register() {
         return;
     }
 
-    let users = getuser();
+    // let users = getuser();
 
     // Check if email is already registered
     const alreadyExists = users.some(u => u.email === email.value);
