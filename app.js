@@ -10,9 +10,9 @@ function getuser() {
 }
 
 
-let myFuction=()=>{
-    console.log()
-}
+// let myFuction=()=>{
+//     console.log()
+// }
 
 function register() {
     const username = document.getElementById("username");
